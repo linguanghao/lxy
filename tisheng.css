@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.box1 {
+  background: linear-gradient(150deg, #ceddfd, #cef8ce, #79f8d2, #7beef7);
+  padding: 20px;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.box2 {
+  margin: 10px auto;
+  max-width: 900px;
+
+  display: flex;
+}
+.box3 {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.v1::-webkit-scrollbar {
+  display: none;
+}
+.v1 {
+  background-color: cadetblue;
+  width: 150px;
+  height: 200px;
+  color: rgb(0, 255, 64);
+  overflow: auto;
+  padding: 0 20px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+.geren {
+  text-decoration: none;
+}
+.geren:hover {
+  padding: 0 15px;
+  background-color: rgb(47, 230, 236);
+  border-radius: 15px;
+  color: rgb(240, 14, 14);
+}
+.box4 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0 0 10px;
+}
+.box5 {
+  /*background-color: rgb(44, 51, 31);*/
+  flex: auto;
+  padding: 0 10px;
+}
+.v2::-webkit-scrollbar {
+  display: none;
+}
+.v2 {
+  flex: 1;
+  background-color: aquamarine;
+  height: 200px;
+  overflow: auto;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin-right: 10px;
+}
+.v3::-webkit-scrollbar {
+  display: none;
+}
+.v3 {
+  flex: 1;
+  background-color: aquamarine;
+  height: 200px;
+  overflow: auto;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+.v4::-webkit-scrollbar {
+  display: none;
+}
+.v4 {
+  background-color: aqua;
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin: 0 10px 0 0;
+}
+.v5::-webkit-scrollbar {
+  display: none;
+}
+/* 滚动条消失*/
+.v5 {
+  background-color: #f1f1f1;
+  padding: 0 20px;
+  border-radius: 30px;
+  height: 300px;
+  overflow: auto;
+}
+/* 当屏幕宽度小于600px时应用此css */
+/* 手机端css全名*/
+@media (max-width: 600px) {
+  .v1 {
+    display: none;
+  }
+  .v4 {
+    display: none;
+  }
+  .box4 {
+    flex-direction: column;
+  }
+  .v2 {
+    flex: auto;
+    margin: 0 0 10px;
+  }
+  .v3 {
+    flex: auto;
+  }
+  .box1 {
+    box-shadow: 0 0 5px 0 rgb(250, 200, 196);
+  }
+}
